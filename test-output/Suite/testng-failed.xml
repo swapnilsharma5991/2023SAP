@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]">
-  <test parallel="none" name="Test3(failed)">
+  <test parallel="none" name="Test1(failed)">
     <classes>
       <class name="tests.Rediff_LoginTest">
         <methods>
@@ -9,18 +9,18 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- tests.Rediff_LoginTest -->
-      <class name="tests.Rediff_createNewAccountTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="rediffmethod1"/>
-        </methods>
-      </class> <!-- tests.Rediff_createNewAccountTest -->
       <class name="tests.Rediff_ShoppingTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="rediffmethod1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.Rediff_ShoppingTest -->
+      <class name="tests.Rediff_createNewAccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.Rediff_createNewAccountTest -->
     </classes>
-  </test> <!-- Test3(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
